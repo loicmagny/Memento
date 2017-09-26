@@ -1,0 +1,19 @@
+title
+{color:blue; text-align:center;}
+
+h1
+{color:red; text-align: center;}
+
+h2
+{color: red; text-align: center;}
+
+h3
+{color: red; text-align: center;text-decoration:underlinetext-decoration:underlin }
+
+p
+{text-align: cente; font-family: serif}
+
+
+
+
+
