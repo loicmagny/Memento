@@ -10,9 +10,10 @@ h3
 {color: red; text-align: center;text-decoration:underline}
 
 p
-{text-align: center}
+{text-align: center;color:white;}
 
 
-
+body
+{background: black;}
 
 
