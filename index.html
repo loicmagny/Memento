@@ -1,78 +1,73 @@
 <!DOCTYPE html>
 <html>
-   <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Mon Mémento</title>
-  </head>
-  <body>
-	
-	<h1>La ligne de commande</h1>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Mon Mémento</title>
+</head>
+<body>
+  <h1>La ligne de commande</h1>
+  <p><b>Commandes de base:</b></p>
+  <p>
+    - man: afficher manuel commandes   </br>
+    - cd: se déplacer d'un dossier à un autre</br>
+    - ls: -a (affiche contenu du dossier avec contenu cachés) -l (affiche version longue) -> à mélanger pour avoir version longue avec contenus caché<br/>
+    - mv: déplacer un fichier/dossier</br>
+    - touch: créer un fichier</br>
+    - pwd: afficher position</br>
+    - cat: modifier fichier via interface graphique</br>
+    - nano: modifier ficher via console</br>
+    - mkdir: créer dossier </br>
+    - apt update: afficher paquets</br>
+    - apt upgrade: mettre à jour paquets</br>
+    - apt search: chercher paquet ( à coupler avec | grep pour recherche plus précise)</br>
+    - sudo -s: passer en superutilisateur</br></p>
+    <p><b>Commandes dangereuses:</b></p>
+    <p>
+      -rm: supprimer dossier (rm -rf /NomDuDossier)</br>
+      Attention! A écrire correctement, risque de tout supprimer</br>
+      mv: cf</p>
+      <p><b>Astuces:</b></p>
+      <p>
+        - Copier/coller: ctrl+c pour copier; shift+inser pour coller</br>
+        - Tab + début du mot pour gagner du temps et éviter fautes de frappe</br>
+      </p>
+      <h2>Gestion de documents</h2></br>
 
-
-	<p><b>Commandes de base:</b></p>
-
-
-<p>
-- man: afficher manuel commandes   </br>
-- cd: se déplacer d'un dossier à un autre</br>
-- ls: -a (affiche contenu du dossier avec contenu cachés) -l (affiche version longue) -> à mélanger pour avoir version longue avec contenus caché<br/>
-- mv: déplacer un fichier/dossier</br>
-- touch: créer un fichier</br>
-- pwd: afficher position</br>
-- cat: modifier fichier via interface graphique</br>
-- nano: modifier ficher via console</br>
-- mkdir: créer dossier </br>
-- apt update: afficher paquets</br>
-- apt upgrade: mettre à jour paquets</br>
-- apt search: chercher paquet ( à coupler avec | grep pour recherche plus précise)</br>
-- sudo -s: passer en superutilisateur</br></p>
-
-
-	<p><b>Commandes dangereuses:</b></p>
-
-
-<p>
--rm: supprimer dossier (rm -rf /NomDuDossier)</br>
-Attention! A écrire correctement, risque de tout supprimer</br>
-mv: cf</p>
-
-	
-	<p><b>Astuces:</b></p>
-
-
-<p>
-- Copier/coller: ctrl+c pour copier; shift+inser pour coller</br> 
-- Tab + début du mot pour gagner du temps et éviter fautes de frappe</br>
-</p>
-
-
-	<h2>Gestion de documents</h2>
-
-
-	<h3>Utilisation de Git</h3>
-
-
-<p>- Accéder à la configuration de Git: git config</p>
-<p>- Ajouter nom d'utilisateur/adresse mail:- git config --user.name "username" | git config --user.email username@hotmail.com</p>
-<p>- Vérifier les paramètres: git --list</p>
-<p>- Valider les modifications: git commit</p>
-<p>- Ajouter quelque chose: gitt add</p>
-<p>- Cloner quelque chose depuis une URL: git clone + url</p>
-<p>- Vérifier l'état des fichiers: git status</p>
-<p>- Ignorer des fichiers: .gitignore</p>
-<p>- Visualiser ce qui a été modifié mais pas encore indexé: git diff</p>
-<p>- Visualiser ce qui a été indexé jusq'a maintenant: git dif --cached</p>
-<p>- Effacer un/des fichiers: git rm</p>
-<p>- Déplacer un/des fichiers: git mv</p>
-<p>- Visualiser l'historique des modifications: git log</p>
-<p>- Afficher l'historique des modifications avec l'ensemble des modifications effectuées: git log -p --word-diff</p>
-<p>- Afficher les statisques de chaque commit: git stat</p>
-<p>- Visualiser les modifications via une interface graphique: gitk</p>		
-<p>- Modifier le dernier commit: git commit --ammend</p>
-<p>- Désindexer un fichier déjà indexé: git reset HEAD <Fichier></p>
-
-
-<pre><code></code></pre>
-  </body>
-</html>
+      <h3>Utilisation de Git</h3>
+      <p>- Accéder à la configuration de Git: git config</p>
+      <p>- Ajouter nom d'utilisateur/adresse mail:- git config --user.name "username" | git config --user.email username@hotmail.com</p>
+      <p>- Vérifier les paramètres: git --list</p>
+      <p>- Valider les modifications: git commit</p>
+      <p>- Ajouter quelque chose: gitt add</p>
+      <p>- Cloner quelque chose depuis une URL: git clone + url</p>
+      <p>- Vérifier l'état des fichiers: git status</p>
+      <p>- Ignorer des fichiers: .gitignore</p>
+      <p>- Visualiser ce qui a été modifié mais pas encore indexé: git diff</p>
+      <p>- Visualiser ce qui a été indexé jusq'a maintenant: git dif --cached</p>
+      <p>- Effacer un/des fichiers: git rm</p>
+      <p>- Déplacer un/des fichiers: git mv</p>
+      <p>- Visualiser l'historique des modifications: git log</p>
+      <p>- Afficher l'historique des modifications avec l'ensemble des modifications effectuées: git log -p --word-diff</p>
+      <p>- Afficher les statisques de chaque commit: git stat</p>
+      <p>- Visualiser les modifications via une interface graphique: gitk</p>
+      <p>- Modifier le dernier commit: git commit --ammend</p>
+      <p>- Désindexer un fichier déjà indexé: git reset HEAD <Fichier></p>
+        <p>- Créer nouvelle branche: git branch</p>
+        <p>- Switcher de branche: git checkout </p>
+        <p>- créer dépositoire sur point de dépot: git remote add origin + URL</p>
+        <p>- Transférer commit dépositoire -> PC: git push origin + NomDuCommit</p>
+        <p>- Fusionner branches: git merge + NomBrancheAFusionner NomBrancheActuelle</p>
+        <p>- Transférer commit PC -> Dépositoire: git pull</p>
+        <pre><code></code></pre>
+      </body>
+      </html>
+      <h4>Commandes HTML</h4>
+      <p>- Faire un tableau: table; thead(th); tfoot(td); tbody(tr);</p>
+      <p>- Fusionner cellules: colspan (horizontal); rowspan (vertical)</p>
+      <p>- div id="élément": rendre élément modifiable par CSS (#élément{})</p>
+      <p>- Faire une liste: numérotée (ol puis il); simple (ul puis il)</p>
+      <p>- Inclure une image: IMG src= [URL]; +alt: description; +title: titre
+        <p>- Mettre couleur: span style= color:"couleur"</p>
+        <p>- Mettre en gras: strong</p>
+        <p>-
