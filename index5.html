@@ -1,0 +1,24 @@
+!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Création VHost</title>
+</head>
+<body>
+  <fieldset>
+    <a href="file:///home/loic/Documents/website/Memento/index.html">La ligne de commande</a></br>
+    <a href="file:///home/loic/Documents/website/Memento/index2.html">Commandes PHP</a></br>
+    <a href="file:///home/loic/Documents/website/Memento/index3.html">Utilisation de Git</a></br>
+    <a href="file:///home/loic/Documents/website/Memento/index4.html">Commandes HTML</a></br>
+    <a href="file:///home/loic/Documents/website/Memento/index5.html">Création VHost</a></br>
+</fieldset>
+<h4 id="CommandesHTML"><span style="color:red">Création VHost</h4>
+<p>Pour créer un VHost, il faut:</p>
+<p>- Créer dossier+fichier liés au VHost, pour commencer.</p>
+<p>Ensuite il faut passer en superutilisateur puis aller dans "/etc/apache2/sites-available/" afin de créer le fichier.conf avec Nano.</p>
+<p>Après, il faut aller dans un autre fichier .conf et le copier-coller dans le nouveau fichier .conf en s'assurant des bonnes adresses du fichier. Aprés ça, il faut déclarer le site comme disponible: "a2ensite fichier.conf" puis relancer Apache grâce à "systemctl reload apache2"</p>
+<p>Une fois le VHost et le .conf créé, on peut se rendre dans /etc puis ouvrir le fichier hosts avec nano. Il faut maintenant rentrer l'IP du "site" -> 127.0.0.1</p>
+<p>Enfin, sur Firefox il ne reste plus qu'a entrer "http://"nomDuFichier/</p>
+  </body>
+  </html>
