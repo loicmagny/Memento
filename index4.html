@@ -3,15 +3,22 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="assets/css/style.css">
-  <title>Mon Mémento</title>
+  <title>Commandes HTML</title>
 </head>
 <body>
   <fieldset>
-    <a href="file:///home/loic/Documents/website/Memento/index.html">La ligne de commande</a></br>
-    <a href="file:///home/loic/Documents/website/Memento/index2.html">Commandes PHP</a></br>
-    <a href="file:///home/loic/Documents/website/Memento/index3.html">Utilisation de Git</a></br>
-    <a href="file:///home/loic/Documents/website/Memento/index4.html">Commandes HTML</a></br>
-<a href="file:///home/loic/Documents/website/Memento/index5.html">Création VHost</a></br>
+    <p>
+      <form method = "post" action="Memento.php">
+        <select name="navigation" onchange="document.location = this.options[this.selectedIndex].value;">
+          <option value = "sélectionnez">Sélectionnez..</option>
+          <option value = "index.html">Console de commandes</option>
+          <option value = "index2.html">Commandes PHP</a></option>
+          <option value = "index3.html">Commandes de Git</a></option>
+          <option value = "index4.html">Commandes HTML</option>
+          <option value = "index5.html">Création VHost</option>
+        </select>
+      </p>
+    </form>
   </fieldset>
   <h4 id="CommandesHTML"><span style="color:red">Commandes HTML</h4>
     <p>- Faire un tableau: table; thead(th); tfoot(td); tbody(tr);</p>

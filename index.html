@@ -7,11 +7,18 @@
 </head>
 <body>
   <fieldset>
-    <a href="file:///home/loic/Documents/website/Memento/index.html"> La ligne de commande</a></br>
-    <a href="file:///home/loic/Documents/website/Memento/index2.html">Commandes PHP</a></br>
-    <a href="file:///home/loic/Documents/website/Memento/index3.html">Utilisation de Git</a></br>
-    <a href="file:///home/loic/Documents/website/Memento/index4.html">Commandes HTML</a></br>
-    <a href="file:///home/loic/Documents/website/Memento/index5.html">Création VHost</a></br>
+    <p>
+      <form method = "post" action="Memento.php">
+        <select name="navigation" onchange="document.location = this.options[this.selectedIndex].value;">
+          <option value = "sélectionnez">Sélectionnez..</option>
+          <option value = "index.html">Console de commandes</option>
+          <option value = "index2.html">Commandes PHP</option>
+          <option value = "index3.html">Commandes de Git</option>
+          <option value = "index4.html">Commandes HTML</option>
+          <option value = "index5.html">Création VHost</option>
+        </select>
+      </p>
+    </form>
   </fieldset>
   <h1 id="Lalignedecommande">La ligne de commande</h1>
   <p><strong><span style="color: red" > Commandes de base:</strong></p>
@@ -32,7 +39,7 @@
       <p>
         <p>-rm: supprimer dossier (rm -rf /NomDuDossier)</p>
         <p>Attention! A écrire correctement, risque de tout supprimer</p>
-                <p><strong><span style="color:red">Astuces:</strong></p>
+        <p><strong><span style="color:red">Astuces:</strong></p>
           <p>- Copier/coller: ctrl+c pour copier; shift+inser pour coller</p>
           <p>- Tab + début du mot pour gagner du temps et éviter fautes de frappe</p>
         </body>
